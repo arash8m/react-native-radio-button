@@ -41,7 +41,7 @@ export default class RadioButton extends Component {
     }
 
     return (
-      <TouchableOpacity style={[styles.radio, outerStyle]} onPress={onPress}>
+      <TouchableOpacity style={[styles.radio, outerStyle]} onPress={onPress} activeOpacity={1}>
         {isSelected ? <View style={innerStyle} {...this.props} /> : null}
       </TouchableOpacity>
     )
